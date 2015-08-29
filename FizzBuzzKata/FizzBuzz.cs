@@ -23,17 +23,21 @@ namespace FizzBuzzKata
         {
             string output = "";
 
-            if(num % 3 == 0)
+            if (num % 15 == 0)
+            {
+                output = "FizzBuzz";
+            }
+            else if(num % 3 == 0)
             {
                 output += "Fizz";
             }
 
-            if(num % 5 == 0)
+            else if(num % 5 == 0)
             {
                 output += "Buzz";
             }
 
-            if (output == "")
+           else 
             {
                 output = num.ToString();
             }
